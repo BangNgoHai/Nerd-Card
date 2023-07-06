@@ -16,17 +16,17 @@ const NavBar = (props) => {
             <div className='text-[20px] font-bold mr-2'>Nerd Card</div>
             <BsSunFill size={"24px"} color="#e9c46a"className='cursor-pointer' />
         </div>
-        <ul className='ml-auto text-16 font-semibold'>
+        <ul className='md:flex md:gap-10 ml-auto text-16 font-semibold'>
             {openMenu && isMobile ? (
                 <MdOutlineClose size={"24px"} className="cursor-pointer" onClick={handleMenu}/>
             ) : !openMenu && isMobile ?( 
                 <HiOutlineMenu size={"24px"} className='cursor-pointer' onClick={handleMenu}/>  
             ):(
                 <>
-                    <li className='cursor-pointer'>Features</li>
-                    <li className='cursor-pointer'>Menu</li>
-                    <li className='cursor-pointer'>OurStory</li>
-                    <li className='cursor-pointer'>Context</li>
+                    <li className='btn-hover'>Features</li>
+                    <li className='btn-hover'>Menu</li>
+                    <li className='btn-hover'>OurStory</li>
+                    <li className='btn-hover ml-28'>Contact</li>
                 </>
             )}
             {openMenu && (
@@ -34,7 +34,7 @@ const NavBar = (props) => {
                     <li className='cursor-pointer'>Features</li>
                     <li className='cursor-pointer'>Menu</li>
                     <li className='cursor-pointer'>OurStory</li>
-                    <li className='cursor-pointer'>Context</li>
+                    <li className='cursor-pointer'>Contact</li>
                 </div>
             )}
         </ul>
