@@ -37,7 +37,7 @@ const NavBar = (props) => {
                 </>
             )}
             {openMenu && (
-                <div className='text-black absolute right-8 bg-white p-8 text-center text-13'>
+                <div className='text-black absolute right-8 bg-white p-8 text-center text-13 z-10'>
                     <li className='cursor-pointer'>Features</li>
                     <li className='cursor-pointer'>Menu</li>
                     <li className='cursor-pointer'>OurStory</li>
